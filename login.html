@@ -14,8 +14,7 @@
     <script src="https://www.gstatic.com/firebasejs/5.5.7/firebase.js"></script>
     <script src="cordova.js"></script>
     <script>
-        
-    // Initialize Firebase
+          // Initialize Firebase
     var config = {
       apiKey: "AIzaSyCr6U60LorPJ-turb3DkLR8TTKA4wRrTwU",
       authDomain: "shopee-f432d.firebaseapp.com",
@@ -32,7 +31,7 @@
     db.settings({
       timestampsInSnapshots: true
     });
-
+        
     </script>
     <title>Document</title>
 </head>
@@ -76,6 +75,7 @@
  firebase.auth().onAuthStateChanged(function(user) {
   if (user) {
     // User is signed in.
+    console.log('user',user);
    window.location.href='home.html'
     // ...
   } 
