@@ -287,6 +287,10 @@
   });
 
   function getHomeData() {
+    let code = localStorage.getItem('code')
+       if(code){productDetail(code.toString())}
+
+
 
     var docRef = db.collection("UI").doc("home");
     docRef.get().then(function (doc) {
@@ -430,6 +434,7 @@
       .catch(function (error) {
         console.log("Error getting documents: ", error);
       });
+      localStorage.clear('code');
   }
 
   var dataCart = [];
