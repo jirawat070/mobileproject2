@@ -42,13 +42,18 @@
 </head>
 
 <body>
-    <div style="position: relative;display: inline-block;margin-top:50% ;margin-left:6%  ">
-        <canvas id="qr-canvas" width="320" height="240"></canvas>       
+    <div style="position: relative;display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:30%   ">
+        <canvas id="qr-canvas" width="320" height="240" ></canvas>       
         <div class="scanner-laser laser-rightBottom" style="opacity: 0.5;"></div>
         <div class="scanner-laser laser-rightTop" style="opacity: 0.5;"></div>
         <div class="scanner-laser laser-leftBottom" style="opacity: 0.5;"></div>
         <div class="scanner-laser laser-leftTop" style="opacity: 0.5;"></div>
       </div>
+
+      
     <script>
         document.addEventListener("deviceready", onDeviceReady, false);
         function onDeviceReady() {
@@ -86,6 +91,7 @@ QRScanner.show();
 //     alert(text);
 //   }
 // }
+
     </script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/qrcodelib.js"></script>
