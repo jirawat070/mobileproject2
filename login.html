@@ -40,6 +40,7 @@
 <body>
     <ons-page>
         <div style="text-align: center; margin-top: 30px;">
+           <fa4-h3>PSU-Shopping</fa4-h3>
             <p>
                 <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>
             </p>
@@ -47,18 +48,19 @@
                 <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
             </p>
             <p style="margin-top: 30px;">
-                <ons-button onclick="login()">Sign in</ons-button>
+                <ons-button onclick="login()" style="width:120px;">Sign in</ons-button>
             </p>
             <p style="margin-top: 30px;">
-                <ons-button onclick="google()"><i class="fab fa-google-plus-square"></i> google</ons-button>
+                <ons-button onclick="google()" style="width:120px; color: red; background-color: white"><i class="fab fa-google-plus-square"></i> google</ons-button>
 
 
             </p>
             <p style="margin-top: 30px;"></p>
-            <ons-button onclick="facebook()"><i class="fab fa-facebook"></i> facebook</ons-button>
+            <ons-button onclick="facebook()" style="width:120px; color:blue;background-color: white"><i class="fab fa-facebook"></i> facebook</ons-button>
             </p>
-            <p style="margin-top: 30px;">
-                <a href="register.html">Sing Up</a>
+            <p style="margin-top: 30px; ">
+                
+                <ons-button onclick="window.location='register.html'" style="width:120px;"> Sign Up</ons-button>
             </p>
         </div>
     </ons-page>
