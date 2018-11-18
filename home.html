@@ -160,7 +160,7 @@
                   </div>
                   <div class="right">
   
-                      <ons-icon icon="md-delete" onclick="deleted(<%num%>)"></ons-icon>
+                      <ons-icon icon="md-delete" onclick="remove(<%= num%>)"></ons-icon>
                       <div class="right">
                         
                     </div>
@@ -438,7 +438,7 @@
       localStorage.clear('code');
   }
 
-  var dataCart = [];
+  let dataCart = [];
 
   function addtoCart(pid) {
     // localStorage.clear('quentinTarantino');
@@ -470,7 +470,7 @@
       })
     })
   }
-
+/*
   function remove(i) {
     console.log(i);
 
@@ -496,7 +496,7 @@
     $('#showprice').html("<p><b>&nbsp; Total Price is : </b>" + price + " ฿</p>");
 
   }
-
+*/
 </script>
 
 </html>
